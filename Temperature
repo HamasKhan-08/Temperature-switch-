@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int
+main ()
+{
+  char unit;
+  int num;
+  int ans;
+  cout <<
+    " Please enter to which unit would you like to convert to; enter f for fahrenheit and c for celsius "
+    << endl;
+  cin >> unit;
+  switch (unit)
+    {
+    case 'f':
+    case 'F':
+      {
+	cout << " Please enter your temperature " << endl;
+	cin >> num;
+	ans = (num * 9 / 5) + 32;
+	{
+	  cout << " Your temperature in fahrenheit is " << ans << endl;
+	}
+      }
+      break;
+    case 'C':
+    case 'c':
+      {
+	cout << " Please enter your temperature " << endl;
+	cin >> num;
+	ans = (num - 32) * 9 / 5;
+	{
+	  cout << " Your temperature in celsius is " << ans << endl;
+	}
+      }
+      break;
+      {
+    default:
+	{
+	  cout << " Incorrect unit " << endl;
+	}
+      }
+    }
+}
+
+
